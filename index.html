@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="translated-ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samo Halloween</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      charset="UTF-8"
+      href="./m=el_main_css"
+    />
+  </head>
+  <body
+    style="
+      background: #000;
+      margin: 0;
+      background-image: url(&#39;background.jpg&#39;);
+      background-size: 1500px 800px;
+      background-repeat: no-repeat;
+    "
+    onclick="showText()"
+    class="vsc-initialized"
+  >
+    <p
+      id="infoText"
+      style="
+        display: block;
+        font-family: system-ui;
+        color: rgb(162, 162, 162);
+        line-height: 1.5em;
+        margin-left: 20px;
+        margin-top: 750px;
+        position: absolute;
+      "
+    >
+      <font style="vertical-align: inherit"
+        ><font style="vertical-align: inherit"
+          >👉 Press "Space" to reset the pumpkin.
+        </font></font
+      ><br /><font style="vertical-align: inherit"
+        ><font style="vertical-align: inherit"
+          >👉 "Enter" to clear the world.
+        </font></font
+      ><br /><font style="vertical-align: inherit"
+        ><font style="vertical-align: inherit"
+          >👉 Editor mode: hold down 'q', 'w', 'e', ​​'r', or 't' (game objects)
+          or 'm' (monsters), and click to add objects to the world and create
+          your own structures.</font
+        ></font
+      >
+    </p>
+    <script src="./p5.js"></script>
+    <script src="./matter.min.js"></script>
+    <script src="./matter-attractors"></script>
+    <script>
+      function showText() {
+        document.getElementById('infoText').style.display = 'block';
+      }
+    </script>
+    <script src="./sketch.js"></script>
+
+    <main></main>
+  </body>
+</html>
